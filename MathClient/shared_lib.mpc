@@ -1,0 +1,13 @@
+// shared_lib.mpc
+    
+project (MathClient) {
+    exename = MathClient
+    install = .
+      
+    libs  += MathLibrary
+    after += MathLibrary
+
+    Source_Files {
+		MathClient.cpp
+    }
+}
